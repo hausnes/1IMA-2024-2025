@@ -1,0 +1,15 @@
+Eks. 1
+--
+Eiga HTML-fil med alle moglege taggar.
+Litt enkel CSS.
+
+Eks. 2
+--
+Koble alle tre saman: HTML, CSS og JS.
+Introdusere linear-gradient.
+Plassere ein boks vha. Flex.
+Lage ein knapp.
+Lyttefunksjon.
+
+Avansert:
+Bytte mellom ei liste med bakgrunnar.

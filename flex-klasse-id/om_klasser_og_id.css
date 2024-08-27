@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boks {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border: 5px solid blue;
+}
+
+/* Denne innstillingen gjelder begge overskriftene */
+h1 {
+    padding-left: 1rem;
+}
+
+/* Disse innstillingene gjelder bare den med riktig klassenavn (se HTML, og let etter class="versjonX") */
+.versjon1 {
+    color: beige;
+}
+
+.versjon2 {
+    color: yellow;
+}

@@ -15,8 +15,34 @@ main {
     width: 80%; /* endre til en spesifikk str. dersom du får problem på for eksempel en veldig brei skjerm */ 
     margin: 1rem auto;
     background-color: #f4f4f4;
-    padding: 1rem;
+    /* padding: 1rem; */
     border: 2px solid black;
+}
+
+/* Generelle innstillinger */
+h1 {
+    color: #fff;
+    background-color: #333;
+    padding-left: 1rem;
+}
+h2 {
+    padding-left: 1rem;
+}
+img {
+    display: block;
+    margin-left: 3rem;
+    max-width: 100%;
+    height: auto;
+}
+p {
+    padding: 0 20px;
+    color: #333;
+}
+ol {
+    margin-left: 2rem;
+}
+ol li {
+    margin: 10px 0;
 }
 
 /* Meny/navigasjon */
@@ -42,26 +68,4 @@ nav ul li a {
 }
 nav ul li a:hover {
     text-decoration: underline;
-}
-
-/* Generelle innstillinger */
-h1 {
-    /* text-align: center; */
-    color: #333;
-}
-img {
-    display: block;
-    margin-left: 3rem;
-    max-width: 100%;
-    height: auto;
-}
-p {
-    padding: 0 20px;
-    color: #333;
-}
-ol {
-    margin-left: 2rem;
-}
-ol li {
-    margin: 10px 0;
 }

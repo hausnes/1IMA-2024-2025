@@ -1,9 +1,11 @@
 ## Grunnleggende repetisjonsoppgave: HTML og CSS
 
+NB: Du trenger ikke bruke flexbox eller css-grid i denne første oppgaven, men du KAN selvsagt gjøre det dersom du ønsker.
+
 **Del 1: HTML**
 
 1. Opprett to HTML-filer, for eksempel `side1.html` og `side2.html`.
-2. I begge filene, bruk følgende tagger: `h1`, `p`, `img`, `a`, `ul`, `ol`, `li`, `div`, osv.
+2. I begge filene, bruk minimum følgende tagger: `h1`, `h2`, `p`, `img`, `a`, `ul`, `ol`, `li`, `div`, `iframe` osv.
 3. Lag en navigasjonsmeny på begge sidene ved hjelp av `ul` og `li` taggene. Lenk til den andre siden ved hjelp av `a` taggen.
 4. Legg til relevant innhold og bilder på hver side.
 

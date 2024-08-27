@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #b4abab;
+}
+
+/* Boks som omslutter alt innholdet (unntatt menyen) */
+main {
+    width: 80%; /* endre til en spesifikk str. dersom du får problem på for eksempel en veldig brei skjerm */ 
+    margin: 1rem auto;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+/* Meny/navigasjon */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Generelle innstillinger */
+h1 {
+    /* text-align: center; */
+    color: #333;
+}
+img {
+    display: block;
+    margin-left: 3rem;
+    max-width: 100%;
+    height: auto;
+}
+p {
+    padding: 0 20px;
+    color: #333;
+}
+ol {
+    margin-left: 2rem;
+}
+ol li {
+    margin: 10px 0;
+}

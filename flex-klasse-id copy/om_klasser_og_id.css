@@ -1,0 +1,41 @@
+html, body {
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.boks {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border: 5px solid blue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-grow: 1; */
+}
+
+/* Denne innstillingen gjelder begge overskriftene */
+h1 {
+    padding-left: 1rem;
+}
+
+/* Disse innstillingene gjelder bare den med riktig klassenavn (se HTML, og let etter class="versjonX") */
+.versjon1 {
+    color: beige;
+}
+
+.versjon2 {
+    color: yellow;
+}

@@ -31,3 +31,7 @@ body {
     /* flex: 1; */
     gap: 1rem;
 }
+
+.midtstilt_tekst {
+    text-align: center;
+}

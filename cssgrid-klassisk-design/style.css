@@ -5,16 +5,16 @@ html, body {
 }
 
 .item1 { grid-area: header; }
-.item2 { grid-area: menu; }
+.item2 { grid-area: meny; }
 .item3 { grid-area: main; }
 .item4 { grid-area: footer; }
 
 .grid-container {
     display: grid;
     grid-template-areas:
-        'header header  header  header  header  header'
-        'menu   main    main    main    main    main'
-        'menu   footer  footer  footer  footer  footer';
+        'header  header  header'
+        'meny    main    main'
+        'meny    footer  footer';
     /* gap: 10px; */
     /* background-color: #2196F3; */
     /* padding: 10px; */

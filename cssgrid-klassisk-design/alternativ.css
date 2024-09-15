@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
     padding: 0;
 }
@@ -11,16 +11,12 @@ html, body {
 
 .grid-container {
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
-        'header'
-        'header'
-        'meny'
-        'main'
-        'main'
-        'footer';
-    /* gap: 10px; */
-    /* background-color: #2196F3; */
-    /* padding: 10px; */
+        'header  header header header  header'
+        'meny    main    main     main    main'
+        'meny    footer  footer   footer  footer';
 }
 
 #tittel {
@@ -58,9 +54,8 @@ nav ul{
     padding:0;
     margin:0;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-
+    flex-direction: column;
+    /* justify-content: center; */
 }
 
 nav ul li a{
@@ -68,15 +63,40 @@ nav ul li a{
     color:white;
     padding:1.5rem;
     display: block;
-    background-color:#334a94;
 }
 
+/* Endrar bakgrunnsfargen på menyen når ein tek muspeikar over. */
 nav ul li a:hover{
     background-color:#3f72d6;
 }
 
-/* For mobil, eller portrerttmodus med låg oppløysing */
-@media screen and (max-width: 700px) {
+/* For mobil, eller portrerttmodus, med låg oppløysing */
+@media screen and (max-width: 800px) {
+    /* Når skjermstørrelsen blir  */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            'header'
+            'meny'
+            'main'
+            'footer';
+    }
+
+    /* 
+        Endrer menyen sitt design for mobil.
+        Menyelementene ligg ikkje lenger under kvarandre
+        (frå column til row). I tillegg så midtstiller
+        eg elementa i menyen.
+    */
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    /* Når skjermen er liten, så vil biletet i main ta heile bredda. */
     .flyt {
         float: none;
         display: block;
@@ -85,6 +105,7 @@ nav ul li a:hover{
         justify-content: center;
     }
 
+    /* Skriftstørrelsen i header blir mindre på mobil. */
     #tittel {
         font-size: 1rem;
     }

@@ -13,9 +13,9 @@ html, body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
-        'header  header header header  header'
-        'meny    main    main     main    main'
-        'meny    footer  footer   footer  footer';
+        'header  header  header  header   header'
+        'meny    main    main    main     main'
+        'meny    footer  footer  footer   footer';
 }
 
 #tittel {

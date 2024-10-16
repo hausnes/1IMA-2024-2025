@@ -1,0 +1,51 @@
+/* Midtstilling av animasjonen */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: pink;
+}
+
+#container {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+/* Animasjonen */
+@keyframes sprett {
+    0%, 30%, 70%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-200px);
+    }
+    50% {
+        transform: translateY(-150px);
+    }
+    80% {
+        transform: translateY(-100px);
+    }
+    90% {
+        transform: translateY(-50px);
+    }
+}
+
+#ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: sprett 2s; /* Legg til infinite for å få animasjonen til å gjenta seg */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) cubic-bezier(0.25, 0.1, 0.25, 1);
+}

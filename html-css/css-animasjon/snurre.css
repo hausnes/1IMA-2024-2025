@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: pink;
+}
+
+/* Stil for det snurrande elementet */
+#snurrende-element {
+    /* Utsjånad  */
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    padding: 1rem;
+    color: white;
+    border-radius: 10px;
+
+    /* Midtstilling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Animasjon */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Animasjon ved hover */
+#snurrende-element:hover {
+    transform: rotate(360deg);
+}

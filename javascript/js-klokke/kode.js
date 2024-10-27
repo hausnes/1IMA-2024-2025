@@ -26,9 +26,9 @@ Oppgave 2:
 // Oppgåve 2 - å få all koden over til å køyre automatisk kvart sekund
 // Kilde: https://www.w3schools.com/js/js_timing.asp
 
-setInterval(myTimer, 1000);
+setInterval(hvertSekund, 1000);
 
-function myTimer() {
+function hvertSekund() {
     let tid = new Date();
     document.getElementById("utskrift").innerText = tid.getHours() + " h : " + tid.getMinutes() + " m : " + tid.getSeconds() + " s";
 }

@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+}
+
+#spillvalg {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+    background-color: white;
+    padding: 2rem;
+}
+
+/* For å leggje til ein hover-effekt på bileta */
+#spillvalg img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#spillvalg img:hover {
+    transform: translateY(-10px);
+    filter: drop-shadow(0 0 5px rgba(255, 0, 255, 0.8));
+}

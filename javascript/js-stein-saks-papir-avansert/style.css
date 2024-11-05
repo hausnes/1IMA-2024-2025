@@ -4,10 +4,9 @@ html, body {
 
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 0;
+    align-items: center;
+
     background-color: black;
 }
 
@@ -19,11 +18,6 @@ body {
 
     background-color: white;
     padding: 2rem;
-}
-
-#utskrift {
-    color: white;
-    font-size: 2rem;
 }
 
 /* For å leggje til ein hover-effekt på bileta */

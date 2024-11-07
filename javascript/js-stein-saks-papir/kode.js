@@ -63,7 +63,7 @@ function sjekkResultat() {
         console.log("Spelaren vant!");
         resultat = "Spelaren vant!";
     }
-    else {
+    else { // Dersom det ikkje er uavgjort eller brukaren vinn, så vinn datamaskina
         console.log("Datamaskina vant.. Buhu.");
         resultat = "Datamaskina vant!";
     }

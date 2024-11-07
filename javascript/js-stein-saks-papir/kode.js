@@ -69,5 +69,17 @@ function sjekkResultat() {
     }
 
     // Utskrift til HTML av endeleg resultat
-    document.getElementById("utskrift").innerHTML = resultat; 
+    document.getElementById("utskrift").innerHTML = resultat + " (Spelaren valte " + valgBruker + ", datamaskina valte " + valgDatamaskin + ")"; 
+}
+
+// Funksjon for å nullstille spelet, køyrer når brukaren trykker på space på tastaturet
+document.body.onkeyup = function(e){
+    if(e.keyCode == 32){
+        reset();
+    }
+}
+
+function reset() {
+    valgBruker = "";
+    document.getElementById("utskrift").innerHTML = "Velg stein, saks eller papir - forsøk å slå datamaskina!";
 }

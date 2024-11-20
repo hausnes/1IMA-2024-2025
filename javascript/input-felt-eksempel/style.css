@@ -36,7 +36,7 @@ input[type="color"] { /* Styling for fargevelger */
 button {
     padding: 10px;
     font-size: 16px;
-    width: 90%;
+    width: 200px;
     display: block;
     margin-bottom: 10px;
     background-color: #007bff;

@@ -1,5 +1,5 @@
 // Lytt til submit-eventet på skjemaet
-document.querySelector("#skjema").addEventListener("submit", handterSkjema);
+document.getElementById("skjema").addEventListener("submit", handterSkjema);
 
 function handterSkjema(event) {
     // Forhindra at skjemaet blir sendt (og sida lasta på nytt) = SPA (Single Page Application)

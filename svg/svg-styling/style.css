@@ -44,3 +44,34 @@
 #Layer_1 {
     animation: storrelse 4s infinite; /* Bruker 4 sekund på å endre størrelse */
 }
+
+#animert {
+    border: 1px solid black;
+    height: 20px;
+    position: relative;
+    width: 800px;
+}
+
+#firkant {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 780px;
+}
+
+@keyframes flyttFirkant {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 780px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+#firkant {
+    animation: flyttFirkant 8s linear infinite;
+}

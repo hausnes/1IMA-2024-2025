@@ -6,6 +6,10 @@ Ver varsam med å bruke dette programmet, då det kan føre til at serveren blir
 
 ---------------------------------------------------------------------------------------
 Du skal ikkje bruke dette programmet til å sende førespurnader til ein server utan lov.
+
+"DDoS (tjenestenektangrep) er ulovlig i Norge. Straffeloven inneholder flere bestemmelser som rammer både hackerangrep og DDoS.
+En person som utfører et slikt DDoS-angrep risikerer å straffes etter straffeloven § 204 om innbrudd i datasystem og straffeloven § 206 om fare for driftshindring. 
+Strafferammen i disse bestemmelsene er bot eller fengsel i inntil 2 år."
 ---------------------------------------------------------------------------------------
 
 '''

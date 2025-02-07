@@ -2,6 +2,14 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+// Rate limiting, for å betre kunne handtere DDoS-angrep
+const rateLimit = require('express-rate-limit');
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutt
+    max: 100 // maks 100 førespurnader per vindu
+});
+app.use(limiter);
+
 let besokTeller = 0; // Tellar for antall besøk
 
 // Middleware for å logge kvar førespurnad
@@ -25,14 +33,6 @@ app.use((req, res, next) => {
 
     next(); // Fortsett til neste middleware eller route
 });
-
-// Rate limiting, for å betre kunne handtere DDoS-angrep
-const rateLimit = require('express-rate-limit');
-const limiter = rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutt
-    max: 100 // maks 100 førespurnader per vindu
-});
-app.use(limiter);
 
 // Ei enkel route
 app.get('/', (req, res) => {

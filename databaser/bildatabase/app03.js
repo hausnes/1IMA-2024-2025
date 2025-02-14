@@ -11,7 +11,7 @@ const PORT = 3000;
 // Bruk cors-middleware
 // CORS (Cross-Origin Resource Sharing): me konfigurerer serveren til å tillate forespørsler frå andre sider
 const cors = require("cors");
-app.use(cors()); // Legg til denne linjen
+app.use(cors()); // tillat alle forespørsler
 
 // Eksempel på rute som hentar brukarar frå databasen (besøk http://localhost:3000/personer)
 app.get("/personer", (req, res) => {

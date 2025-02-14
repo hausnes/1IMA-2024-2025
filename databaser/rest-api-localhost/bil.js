@@ -1,3 +1,8 @@
+// Video som forklarar koden: https://youtu.be/kqha32VOwAY?si=kfE_51t3p8DsClJ4
+
+// Hugs at serveren vår må tillate CORS-forespurnader for at dette eks. skal fungere!  
+// Sjå nødvendig kode for dette forklart i vidoen over.
+
 async function hentBil() {
     const res = await fetch('http://localhost:3000/biler');
     const data = await res.json();

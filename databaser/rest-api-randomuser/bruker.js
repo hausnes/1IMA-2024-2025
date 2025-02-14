@@ -1,3 +1,8 @@
+// Video som forklarar koden: https://youtu.be/6uBnAGVg7wY?si=SQ2VTBhBrROG2PjA
+
+// Denne JSON-fila er meir komplisert enn dei forrige, så det kreves litt meir
+// "detektivarbeid" for å finne ut kva som er kva...
+
 async function hentPerson() {
     const res = await fetch('https://randomuser.me/api/?results=5');
     const data = await res.json();

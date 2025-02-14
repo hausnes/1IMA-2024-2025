@@ -1,4 +1,7 @@
-// Video med forklaring: Kommer..
+// Video med forklaring: https://www.youtube.com/watch?v=kqha32VOwAY 
+// NB: Det einaste nye her er at me tillet alle forespørsler med cors-middleware (linje 14 og 15).
+// Dette gjer me for å kunne teste API-et vårt frå ei anna side enn der serveren køyrer.
+// Me må tenke gjennom om det er trygt å tillate alle forespørsler i produksjon, altså: per no for testing!
 
 const express = require("express");
 const app = express();

@@ -9,8 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Skummel skog.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Skummel skog" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="A3E46BCA-5B42-461E-B52F-4824D9A6A8D1" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">let lyd = new Audio("bakgrunnsmusikk.mp3");
-lyd.play();</script><tw-passagedata pid="1" name="Start" tags="" position="1450,600" size="100,100"># Programmeringsskogen
+<tw-storydata name="Skummel skog" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="A3E46BCA-5B42-461E-B52F-4824D9A6A8D1" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="1450,600" size="100,100"># Programmeringsskogen
 
 Du står i ein stor, mørk og tett skog.
 
@@ -64,7 +63,32 @@ This is in the next column, which has margins of 1 letter wide. It is three time
  =====||
 This is in the right column, which has a right margin of about 5 letters wide. It is twice as wide as the left column.
   |==|
-This text is not in columns, but takes up the entire width, as usual.</tw-passagedata><tw-passagedata pid="6" name="Multimedier" tags="" position="1175,400" size="100,100">Kort fortalt, i Twine 2 er det enklaste å enten lagre multimedieinnhald enten i same mappe som HTML-fila, eller lagre multimedier på ein server (bruk gjerne Github), for så at du bruker vanleg HTML-kode for å vise dette fram.
+This text is not in columns, but takes up the entire width, as usual.</tw-passagedata><tw-passagedata pid="6" name="Multimedier" tags="" position="1175,400" size="100,100">&lt;style&gt;
+	h1 {
+    	color:red;
+        background-color: white;
+     	border: 5px solid yellow;
+        padding: 1rem;
+        text-align: center;
+    }
+    button {
+    	padding: 2rem;
+        font-size: 2rem;
+    }
+&lt;/style&gt;
+
+&lt;script&gt;
+	let lyd = new Audio(&quot;bakgrunnsmusikk.mp3&quot;);
+	lyd.play();
+    
+    document.getElementById(&quot;knapp&quot;).addEventListener(&quot;click&quot;, skrik);
+    
+    function skrik() {
+    	alert(&quot;Wæææææ!&quot;);
+    }
+&lt;/script&gt;
+
+Kort fortalt, i Twine 2 er det enklaste å enten lagre multimedieinnhald enten i same mappe som HTML-fila, eller lagre multimedier på ein server (bruk gjerne Github), for så at du bruker vanleg HTML-kode for å vise dette fram.
 
 # Bilder
 Du kan legge ei lokal lydfil der du har den eksporterte HTML-fila.
@@ -95,6 +119,9 @@ Video frå lokal fil, same reglar som for lydfiler.
 Video frå Youtube, kan det fungere?
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/qJZ1Ez28C-A?si=bvO78l9EUoE31KUq&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+# Knappar
+&lt;button id=&quot;knapp&quot;&gt;Trykk på meg!&lt;/button&gt;
 
 Du er lei, og vil tilbake til..
 [[Start]] </tw-passagedata></tw-storydata>

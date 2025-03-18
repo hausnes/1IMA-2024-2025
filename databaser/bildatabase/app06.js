@@ -1,12 +1,6 @@
-// Video med forklaring: https://youtu.be/Fqi6RsVPOa4
+// Video med forklaring: Kjem...
 /*
-    Denne videoen viser hvordan du kan lage en rute i app.js-filen din som 
-    tillater å legge til data i databasen. I tillegg blir det vist hvordan du lager 
-    en nettside (i public-mappen), som bruker et skjema (form), litt enkel JS (await, async), 
-    og ruten du lagde på serveren, for å kunne sette inn faktiske data.
-
-    Merk at det blir vist litt om feilmeldinger og problemer som kan oppstå, men her er det mer arbeid å gjøre.
-
+ 
 */
 
 const express = require("express");
@@ -14,6 +8,8 @@ const app = express();
 
 const Database = require("better-sqlite3");
 const db = new Database("bil.db");
+
+const bcrypt = require("bcrypt"); // Importerer bcrypt, ein pakke for å m.a. hashe passord
 
 const PORT = 3000;
 
@@ -35,6 +31,12 @@ app.get("/biler", (req, res) => {
     res.json(cars);
 });
 
+// Rute for å hente alle postnummer
+app.get("/postnummer", (req, res) => {
+    const postnummer = db.prepare("SELECT postnummer, poststed FROM postadresse").all();
+    res.json(postnummer);
+});
+
 // Rute for å legge til ein ny bil i databasen
 app.post("/leggtilbil", (req, res) => {
     const { registreringsnummer, merke, modell, personnummer } = req.body;
@@ -43,6 +45,19 @@ app.post("/leggtilbil", (req, res) => {
     const info = stmt.run(personnummer, registreringsnummer, merke, modell);
 
     res.json({ message: "Ny bil lagt til", info });
+});
+
+app.post("/leggtilperson", async (req, res) => {
+    const { personnummer, fornavn, etternavn, postnummer, passord } = req.body;
+
+    // Hash passordet med bcrypt
+    const saltRounds = 10; // Antall runder med hashing
+    const hashPassord = await bcrypt.hash(passord, saltRounds);
+
+    const stmt = db.prepare("INSERT INTO person (personnummer, fornavn, etternavn, postnummer, passord) VALUES (?, ?, ?, ?, ?)");
+    const info = stmt.run(personnummer, fornavn, etternavn, postnummer, hashPassord);
+
+    res.json({ message: "Ny person lagt til", info });
 });
 
 app.listen(PORT, () => {

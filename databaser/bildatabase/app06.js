@@ -1,6 +1,11 @@
-// Video med forklaring: Kjem...
+// Video med forklaring: https://youtu.be/p8lsmmZfxtM 
 /*
- 
+    Denne videoen viser hvordan du kan la brukere registrere seg på 
+    nettsiden, med et kryptert passord. Vi bruker bcrypt for å få dette til. 
+    I tillegg viser videoen hvordan du kan unngå feil med fremmednøkler, 
+    slik vi så i forrige video. Dette blir håndtert med en ny rute som 
+    henter alle postnummer fra databasen, for så at disse blir fylt ut i 
+    HTML-en i form av et select-element.
 */
 
 const express = require("express");

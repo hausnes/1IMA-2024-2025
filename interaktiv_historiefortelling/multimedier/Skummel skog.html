@@ -84,19 +84,6 @@ This text is not in columns, but takes up the entire width, as usual.</tw-passag
     	padding: 2rem;
         font-size: 2rem;
     }
-    
-    .mountains-of-christmas-bold {
-    	font-family: &quot;Mountains of Christmas&quot;, serif;
-      	font-weight: 700;
-        font-style: normal;
-    }
-    
-    .boldonse-regular {
-        font-family: &quot;Boldonse&quot;, system-ui;
-        font-weight: 400;
-        font-style: normal;
-    }
-
 &lt;/style&gt;
 
 &lt;script&gt;
@@ -109,10 +96,6 @@ This text is not in columns, but takes up the entire width, as usual.</tw-passag
     	alert(&quot;Wæææææ!&quot;);
     }
 &lt;/script&gt;
-
-&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
-&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
-&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Boldonse&amp;family=Mountains+of+Christmas:wght@700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
 
 Kort fortalt, i Twine 2 er det enklaste å enten lagre multimedieinnhald enten i same mappe som HTML-fila, eller lagre multimedier på ein server (bruk gjerne Github), for så at du bruker vanleg HTML-kode for å vise dette fram.
 
@@ -149,10 +132,12 @@ Video frå Youtube, kan det fungere?
 # Knappar
 &lt;button id=&quot;knapp&quot;&gt;Trykk på meg!&lt;/button&gt;
 
-&lt;h1 class=&quot;boldonse-regular&quot;&gt;Test av Google Fonts&lt;/h1&gt;
-
 Du er lei, og vil tilbake til..
-[[Start]] </tw-passagedata></tw-storydata>
+[[Start]] 
+
+[[Test JS]]</tw-passagedata><tw-passagedata pid="7" name="Test JS" tags="" position="1175,525" size="100,100">&lt;script&gt;
+	lyd.pause();
+&lt;/script&gt;</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

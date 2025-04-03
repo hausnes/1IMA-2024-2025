@@ -1,3 +1,8 @@
+// Video med forklaring: ..
+/*
+    I dette programmet ...
+*/
+
 const express = require("express");
 const session = require("express-session");
 const bcrypt = require("bcrypt");
@@ -87,6 +92,12 @@ app.post("/leggtilperson", async (req, res) => {
     const info = stmt.run(personnummer, fornavn, etternavn, postnummer, hashPassord);
 
     res.json({ message: "Ny person lagt til", info });
+});
+
+// Rute for å hente alle postnummer
+app.get("/postnummer", (req, res) => {
+    const postnummer = db.prepare("SELECT postnummer, poststed FROM postadresse").all();
+    res.json(postnummer);
 });
 
 // Start serveren

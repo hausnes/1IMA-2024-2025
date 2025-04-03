@@ -1,21 +1,11 @@
-node app.js
+npm init -y
 
 npm install express
 (npm i express) 
 
+node app.js
 
-npm init -y
-
-
-
-
-
-
-
-
-
-
-
+--------------
 
 npm start
 
@@ -26,9 +16,7 @@ package.json:
     }
 }
 
-
-
-
+--------------
 
 
 NB: Ikke bruk live server!

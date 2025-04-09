@@ -1,6 +1,15 @@
-// Video med forklaring: ..
+// Video med forklaring: https://www.youtube.com/watch?v=pk9SNpc8jR0
 /*
-    I dette programmet ...
+    Denne videoen viser hvordan du legger til middleware på serveren som sjekker 
+    om du er innlogget før du får besøkt visse ruter og sider. Vær oppmerksom på 
+    at dette for HTML-dokumenter krever at du flytter disse fra public-mappen til 
+    en annen, og bruker sendFile. 
+    
+    Dette er et viktig eksempel som viser noen av prinsippene.
+    
+    Merk at HTML, CSS og JS er i en og samme fil i disse eksemplene, for at det 
+    skal være lettere å få oversikt i videoen. Disse bør som alltid separeres i 
+    egne filer.
 */
 
 const express = require("express");

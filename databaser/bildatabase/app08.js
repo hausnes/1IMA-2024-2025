@@ -1,6 +1,9 @@
-// Video med forklaring: ..
+// Video med forklaring: https://youtu.be/Qbqd2jFspVI
 /*
-    I dette programmet ...
+    I denne videoen utvider vi litt konseptet fra tidligere, med en litt mer 
+    logisk måte å bruke tjenesten på. Vi lagar en form for dashboard, der 
+    brukeren, etter innlogging, får se valg som er relevante (vis mine biler, 
+    legg til bil og logg ut). 
 */
 
 const express = require("express");

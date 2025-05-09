@@ -42,7 +42,7 @@ function togglePixelLighting() {
                 // randomPixel.classList.remove('lit');
                 // randomPixel.style.backgroundColor = ''; // Reset color
             }, 500);
-        }, 200);
+        }, 50);
     }
 }
 

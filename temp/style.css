@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#midtstilt {
+    background-color: white;
+    padding: 1rem;
+    animation: pulser 2s infinite;
+}
+
+@keyframes pulser {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+
+.spinning-star {
+    display: inline-block;
+    font-size: 4rem;
+    animation: spinn 2s linear infinite;
+}
+
+@keyframes spinn {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+h1 {
+    font-size: 2rem;
+    color: #e20000;
+    text-align: center;
+}

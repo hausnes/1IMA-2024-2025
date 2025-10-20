@@ -1,7 +1,7 @@
 // Testing av nedtelling til julaften
 let tid = new Date();
 
-let julaften = new Date("2024-12-24T00:00:00+01:00");
+let julaften = new Date("2025-12-24T00:00:00+01:00");
 
 let tidTilJulaften = julaften - tid; // Millisekunder
 console.log(tidTilJulaften); // Skriv ut tid til julaften i millisekunder
